@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e7bb41">
+
+    <EditText
+        android:id="@+id/name_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/hospital_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hospital Name"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/name_doctor"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/dob_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date of Birth"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/hospital_doctor"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/age_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/dob_doctor"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Spinner
+        android:id="@+id/sex_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:hint="Sex"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/age_doctor" />
+
+    <EditText
+        android:id="@+id/experience_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Experience"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/sex_doctor"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/speciality_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Speciality"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/experience_doctor" />
+
+    <EditText
+        android:id="@+id/qualification_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Qualification"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/speciality_doctor"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/submit_button_doctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/qualification_doctor"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
